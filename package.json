@@ -11,13 +11,13 @@
   "author": "SamnangKong426 <samnangkong499@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "4"
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^2.1.4",
-    "chai": "^4.3.10",
-    "eslint": "^8.57.0",
-    "mocha": "^10.4.0",
-    "supertest": "^6.3.3"
+    "@eslint/eslintrc": "2",
+    "chai": "^6.2.0",
+    "eslint": "8",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
   }
 }
