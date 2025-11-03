@@ -4,5 +4,5 @@
 
 ```bash
 yarn remove eslint
-yarn add eslint@8 --dev
+yarn add eslint@8 @eslint/eslintrc@2 --dev
 ```
