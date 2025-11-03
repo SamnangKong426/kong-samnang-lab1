@@ -31,3 +31,22 @@ jobs:
 
       - name: Run tests
         run: yarn test
+
+      - name: Run tests with coverage (nyc + mocha)
+        run: yarn coverage
+
+      - name: Upload coverage report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JorgeLNJunior/render-deploy@v1.4.6
+        with:
+          service_id: ${{ secrets.RENDER_SERVICE_ID }}
+          api_key: ${{ secrets.RENDER_API_KEY }}
+
+
