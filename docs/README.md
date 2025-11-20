@@ -1,11 +1,12 @@
-## 🐳 Lab 2: Docker Workshop Submission - Merged File
+# 🐳 Lab 2: Docker
 
 Student Name: Kong Samnang
+
 GitHub Repository: [https://github.com/SamnangKong426/kong-samnang-lab1/tree/lab2-Docker](https://github.com/SamnangKong426/kong-samnang-lab1/tree/lab2-Docker)
 
 -----
 
-### Part 1: Containerize an Application
+## Part 1: Containerize an Application
 
 Dockerfile
 
@@ -33,9 +34,12 @@ docker run -d -p 127.0.0.1:3000:3000 getting-started
 docker ps
 ```
 
+![alt text](images/image-1.png)
+![alt text](images/image-7.png)
+
 -----
 
-### Part 2: Update the Application
+## Part 2: Update the Application
 
 ```bash
 # Build updated version of image
@@ -50,7 +54,7 @@ docker rm <the-container-id>
 
 -----
 
-### Part 3: Share the Application
+## Part 3: Share the Application
 
 ```bash
 # List all images
@@ -66,9 +70,13 @@ docker build --platform linux/amd64 -t YOUR-USER-NAME/getting-started .
 docker push YOUR-USER-NAME/getting-started 
 ```
 
+![alt text](images/image-2.png)
+![alt text](images/image-5.png)
+![alt text](images/image-6.png)
+
 -----
 
-### Part 4: Persist the DB (Using Volumes)
+## Part 4: Persist the DB (Using Volumes)
 
 ```bash
 # Create a volume
@@ -81,9 +89,12 @@ docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=todo-db,target=/etc/t
 docker volume inspect todo-db
 ```
 
+![alt text](images/image-8.png)
+![alt text](images/image-8.png)
+
 -----
 
-### Part 5: Use Bind Mounts (Local Development)
+## Part 5: Use Bind Mounts (Local Development)
 
 ```bash
 # Example: Run ubuntu container using bind mount to current working directory
@@ -101,7 +112,7 @@ docker logs -f <container-id>
 
 -----
 
-### Part 6: Multi-container Apps
+## Part 6: Multi-container Apps
 
 ```bash
 # Create a network
@@ -121,7 +132,7 @@ docker exec -it <mysql-container-id> mysql -u root -p
 
 -----
 
-### Part 7: Use Docker Compose
+## Part 7: Use Docker Compose
 
 compose.yaml
 
@@ -162,7 +173,7 @@ docker compose up -d
 
 -----
 
-### Part 8: Image-building Best Practices
+## Part 8: Image-building Best Practices
 
 ```bash
 # Monitor image history
@@ -176,9 +187,10 @@ Key Optimization Principle: Optimize the layer caching by copying `package.json`
 
 -----
 
-### Part 9: What Next
+## Part 9: What Next
 
-  - Learn about Container orchestration (e.g., Kubernetes).
-  - Explore Cloud Native Computing Foundation (CNCF) projects.
-  - Create a container from scratch.
+- Learn about Container orchestration (e.g., Kubernetes).
+- Explore Cloud Native Computing Foundation (CNCF) projects.
+- Create a container from scratch.
 
+![alt text](images/image-4.png)
