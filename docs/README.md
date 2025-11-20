@@ -36,6 +36,7 @@ docker ps
 
 ![alt text](images/image-1.png)
 ![alt text](images/image-7.png)
+![alt text](images/image-9.png)
 
 -----
 
@@ -89,7 +90,6 @@ docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=todo-db,target=/etc/t
 docker volume inspect todo-db
 ```
 
-![alt text](images/image-8.png)
 ![alt text](images/image-8.png)
 
 -----
